@@ -3,9 +3,9 @@
 Im folgenden wird eine vorläufiges und noch sehr ausschnitsweises Datenformat
 verwendet. Die Veröffentlichung der Pressemappen-Daten steht noch am Anfang.
 Insbesondere harren die intern benutzten kontrollierten Vokabulare noch einer
-Konvertierung und eines Mappings nach Wikidata. Für die Personen- und
-Firmendossiers, besonders diejenigen mit vielen Dokumenten, ist das
-Wikidata-Mapping dagegen schon fortgeschritten - siehe die
+Konvertierung und eines Mappings nach [Wikidata](http://www.wikidata.org). Für
+die Personen- und Firmendossiers, besonders diejenigen mit vielen Dokumenten,
+ist das Wikidata-Mapping dagegen schon fortgeschritten - siehe die
 [Mix-n-match](https://tools.wmflabs.org/mix-n-match/#/)-Kataloge unter dem
 Stichwort "PM20". Derzeit sind die Einträge aus konrollierten Vokabularen als
 Stringwerte wiedergegeben. Im Unterverzeichnis [raw](./raw) finden sich die
@@ -104,7 +104,9 @@ folder ID, P4293)
 
 **prefLabel - Name** der Person oder Firma, zugleich verwendet als Mappentitel
 
-**gndIdentifier - GND ID**
+**gndIdentifier - GND ID** [Gemeinsame
+Normdatei](https://de.wikipedia.org/wiki/Gemeinsame_Normdatei) der
+deutschsprachigen Bibliotheken
 
 **wdIdentifier - Wikidata Item ID (QID)** aus Wikidata abgeleitet. Kann
 mehrfach auftreten, weil Mappen mehrere Items betreffen können. Umgekehrt kann
