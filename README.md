@@ -42,7 +42,7 @@ Die Daten stehen als [Download](https://dx.doi.org/10.5281/zenodo.1410554)
 sowie online über einen [SPARQL-Endpoint](http://zbw.eu/beta/sparql/pm20/query)
 zur Verfügung. Als Format wurde JSON-LD gewählt, das sowohl mit den üblichen
 Web-Tools und -Bibliotheken als auch mit Linked-Data-Tools verarbeitet werden
-kann ([weitere Einzelheiten zum Format](data/doku.md)).  Ein
+kann ([Format-Dokumentation, mit Beispielen](data/doku.md)).  Ein
 [Github-Repository](https://github.com/zbw/cdv2018-pressemappe20) soll
 Codebeispiele und eventuelle Updates des Datengebers zur Verfügung stellen und
 es zugleich ermöglichen, Fragen und Issues zu adressieren. 

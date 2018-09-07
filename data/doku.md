@@ -81,9 +81,9 @@ Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 
 ## Daten über die Mappe
 
-**@Id - Schlüssel** volle URL der Mappe
+**@id - Schlüssel** volle URL der Mappe
 
-**@Type - Mappentyp** PersonFolder oder CompanyFolder
+**@type - Mappentyp** PersonFolder oder CompanyFolder
 
 **identifier - Kurzschlüssel** letzter Teil der URL, in Wikidata verlinkt (PM20
 folder ID, P4293)
@@ -106,9 +106,9 @@ folder ID, P4293)
 
 **gndIdentifier - GND ID**
 
-**wdIdentifier - Wikidata Item ID (QID)** kann mehrfach auftreten, weil es zu
-umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen gibt; aus Wikidata
-abgeleitet
+**wdIdentifier - Wikidata Item ID (QID)** aus Wikidata abgeleitet; kann
+mehrfach auftreten, weil es zu umfangreichen Themen (z.B. Reichsbahn) mehrere
+Mappen gibt
 
 **wikipediaPage - Wikipedia-Seite** aus Wikidata abgeleitet
 
