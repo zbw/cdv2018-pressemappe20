@@ -43,7 +43,7 @@ _\* Für die eingescannten Presseartikel und sonstigen Dokumente liegen die Rech
 bei den jeweiligen Urhebern. Hier greifen die gesetzlichen Regelungen, für
 diese Dokumente kann die ZBW keine Lizenzen an Dritte erteilen._
 
-`Links* (z.B. zu Schnittstellen oder einer Datenpräsentation:`
+`Links* (z.B. zu Schnittstellen oder einer Datenpräsentation):`
 
 ## Datenbereitstellung
 
