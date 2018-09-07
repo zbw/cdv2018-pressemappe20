@@ -1,3 +1,4 @@
-daten/*.json
-daten/raw/*.dat
+_build
+data/pm20_cdv2018.jsonld
+data/raw/*.dat
 

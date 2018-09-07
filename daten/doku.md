@@ -1,3 +1,0 @@
-# Dokumentation des Datenformats
-
-
