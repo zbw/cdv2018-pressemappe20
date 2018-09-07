@@ -96,7 +96,7 @@ folder ID, P4293)
 
 **freeDocCount - Anzahl der online zugänglichen Dokumente** der Mappe
 
-**note - Notiz** bezieht sich z.T. auch auf den Mappengegenstand
+**note - Notiz** freier Text; bezieht sich z.T. auch auf den Mappengegenstand
 
 
 
@@ -106,9 +106,9 @@ folder ID, P4293)
 
 **gndIdentifier - GND ID**
 
-**wdIdentifier - Wikidata Item ID (QID)** aus Wikidata abgeleitet; kann
-mehrfach auftreten, weil es zu umfangreichen Themen (z.B. Reichsbahn) mehrere
-Mappen gibt
+**wdIdentifier - Wikidata Item ID (QID)** aus Wikidata abgeleitet. Kann
+mehrfach auftreten, weil Mappen mehrere Items betreffen können. Umgekehrt kann
+es zu umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen geben.
 
 **wikipediaPage - Wikipedia-Seite** aus Wikidata abgeleitet
 
@@ -121,9 +121,9 @@ Mappen gibt
 
 **dateOfBirthAndDeath - Lebensdaten** nicht kontrolliertes Format
 
-**birthDate - Geburtsjahr**
+**birthDate - Geburtsjahr** abgeleitet aus dateOfBirthAndDeath
 
-**deathDate - Todesjahr**
+**deathDate - Todesjahr** abgeleitet aus dateOfBirthAndDeath
 
 
 
@@ -137,16 +137,19 @@ Mappen gibt
 
 **fromTo - Zeit, während der die Firma bestand** nicht kontrolliertes Format
 
-**foundingDate - Gründungsjahr**
+**foundingDate - Gründungsjahr** abgeleitet aus fromTo
 
-**dissolutionDate - Jahr der Auflösung**
+**dissolutionDate - Jahr der Auflösung** abgeleitet aus fromTo
 
 
 ## Bemerkungen zur Linked-Data-Umsetzung
 
 Die verwendete RDF-Struktur ist noch experimentell und lediglich in
 [context.jsonld](./context.jsonld) dokumentiert. Einige der benutzten
-Properties (z.B. schema:hasOccupation) sind sehr frei interpretiert.
+Properties (z.B. schema:hasOccupation) sind sehr frei interpretiert, die
+eigentlich vorgesehene Verlinkung auf eigenständige Ressourcen fehlt noch.
 
 Dank geht an die KollegInnen von [lobid.org](http://lobid.org), die mit ihren
-Überlegungen zu besser nutzbaren Linked Open Data viele Anregungen gegeben haben.
+Überlegungen zu besser nutzbaren Linked Open Data und entsprechenden
+Implementierungen viele wertvolle Anregungen gegeben haben.
+
