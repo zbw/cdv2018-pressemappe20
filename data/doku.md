@@ -123,9 +123,9 @@ es zu umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen geben.
 
 **dateOfBirthAndDeath - Lebensdaten** nicht kontrolliertes Format
 
-**birthDate - Geburtsjahr** abgeleitet aus dateOfBirthAndDeath
+**birthDate - Geburtsjahr** abgeleitet aus `dateOfBirthAndDeath`
 
-**deathDate - Todesjahr** abgeleitet aus dateOfBirthAndDeath
+**deathDate - Todesjahr** abgeleitet aus `dateOfBirthAndDeath`
 
 
 
@@ -139,9 +139,20 @@ es zu umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen geben.
 
 **fromTo - Zeit, während der die Firma bestand** nicht kontrolliertes Format
 
-**foundingDate - Gründungsjahr** abgeleitet aus fromTo
+**foundingDate - Gründungsjahr** abgeleitet aus `fromTo`
 
-**dissolutionDate - Jahr der Auflösung** abgeleitet aus fromTo
+**dissolutionDate - Jahr der Auflösung** abgeleitet aus `fromTo`
+
+**member - Beziehung zu einer Person**
+
+**member/url - Schlüssel für die Person**
+
+**member/name - Name der Person** abgeleitet von `url`
+
+**member/roleName - Rolle** Funktion; kontroliertes Vokabular
+
+**member/fromTo - Zeitraum** in dem die Person die Funktion eingenommen hat;
+nicht kontrolliertes Format
 
 
 ## Bemerkungen zur Linked-Data-Umsetzung
