@@ -74,84 +74,86 @@ Beispieldaten für ein Firmen-Dossier:
     ]
 }
 ```
-Felder, die mehrfach auftrreten können, werden durchgängig als Array ausgegeben. 
+Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben. 
 
 Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 
 
 ## Daten über die Mappe
 
-**@id - Schlüssel** volle URL der Mappe
+Feld | Bezeichnung | Kommentar
+-----|-------------|----------
+`@id` | Schlüssel | volle URL der Mappe
 
-**@type - Mappentyp** PersonFolder oder CompanyFolder (+ stets Pm20Folder)
+`@type` | Mappentyp | PersonFolder oder CompanyFolder (+ stets Pm20Folder)
 
-**identifier - Kurzschlüssel** letzter Teil der URL, in Wikidata verlinkt (PM20
+`identifier` | Kurzschlüssel | letzter Teil der URL, in Wikidata verlinkt (PM20
 folder ID, P4293)
 
-**temporal - zeitliche Abdeckung** des gesammelten Materials
+`temporal` | zeitliche Abdeckung | des gesammelten Materials
 
-**viewUrl - Mappeninhalt** per DFG-Viewer
+`viewUrl` | Mappeninhalt | per DFG-Viewer
 
-**totalDocCount - Gesamtzahl der Dokumente** der Mappe
+`totalDocCount` | Gesamtzahl der Dokumente | der Mappe
 
-**freeDocCount - Anzahl der online zugänglichen Dokumente** der Mappe
+`freeDocCount` | Anzahl der online zugänglichen Dokumente | der Mappe
 
-**note - Notiz** freier Text; bezieht sich z.T. auch auf den Mappengegenstand
+`note` | Notiz | freier Text; bezieht sich z.T. auch auf den Mappengegenstand
 
 
 
 ## Daten über den Gegenstand der Mappe
 
-**prefLabel - Name** der Person oder Firma, zugleich verwendet als Mappentitel
+`prefLabel` | Name | der Person oder Firma, zugleich verwendet als Mappentitel
 
-**gndIdentifier - GND ID** [Gemeinsame
+`gndIdentifier` | GND ID | [Gemeinsame
 Normdatei](https://de.wikipedia.org/wiki/Gemeinsame_Normdatei) der
 deutschsprachigen Bibliotheken
 
-**wdIdentifier - Wikidata Item ID (QID)** aus Wikidata abgeleitet. Kann
+`wdIdentifier` | Wikidata Item ID (QID) | aus Wikidata abgeleitet. Kann
 mehrfach auftreten, weil Mappen mehrere Items betreffen können. Umgekehrt kann
 es zu umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen geben.
 
-**wikipediaPage - Wikipedia-Seite** aus Wikidata abgeleitet
+`wikipediaPage` | Wikipedia-Seite | aus Wikidata abgeleitet
 
 
 ### Daten über Personen
 
-**nationality - Nationalität** kontrolliertes Vokabular
+`nationality` | Nationalität | kontrolliertes Vokabular
 
-**hasOccupation - Tätigkeit** freier Text
+`hasOccupation` | Tätigkeit | freier Text
 
-**dateOfBirthAndDeath - Lebensdaten** nicht kontrolliertes Format
+`dateOfBirthAndDeath` | Lebensdaten | nicht kontrolliertes Format
 
-**birthDate - Geburtsjahr** abgeleitet aus `dateOfBirthAndDeath`
+`birthDate` | Geburtsjahr | abgeleitet aus `dateOfBirthAndDeath`
 
-**deathDate - Todesjahr** abgeleitet aus `dateOfBirthAndDeath`
+`deathDate` | Todesjahr | abgeleitet aus `dateOfBirthAndDeath`
 
 
 
 ### Daten über Firmen
 
-**organizationType - Art der Organisation** kontrolliertes Vokabul
+`organizationType` | Art der Organisation | kontrolliertes Vokabul
 
-**industry - Branche** kontrolliertes Vokabular
+`industry` | Branche | kontrolliertes Vokabular
 
-**location - Sitz** kontrolliertes Vokabular
+`location` | Sitz | kontrolliertes Vokabular
 
-**fromTo - Zeit, während der die Firma bestand** nicht kontrolliertes Format
+`fromTo` | Zeit, während der die Firma bestand | nicht kontrolliertes Format
 
-**foundingDate - Gründungsjahr** abgeleitet aus `fromTo`
+`foundingDate` | Gründungsjahr | abgeleitet aus `fromTo`
 
-**dissolutionDate - Jahr der Auflösung** abgeleitet aus `fromTo`
+`dissolutionDate` | Jahr der Auflösung | abgeleitet aus `fromTo`
 
-**member - Beziehung zu einer Person**
+`member` | Beziehung zu einer Person |
 
-**member/url - Schlüssel für die Person**
+`member/url` | Schlüssel für die Person |
 
-**member/name - Name der Person** abgeleitet von `url`
+`member/name` | Name der Person | abgeleitet von `url`
 
-**member/roleName - Rolle** Funktion; kontroliertes Vokabular
+`member/roleName` | Rolle | Funktion; kontroliertes Vokabular
 
-**member/fromTo - Zeitraum** in dem die Person die Funktion eingenommen hat;
+`member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat;
 nicht kontrolliertes Format
 
 
