@@ -14,7 +14,7 @@ curl --silent  -X POST -H "Content-type: application/sparql-query" -H "Accept: a
 python transform_jsonld.py > $DATA_DIR/pm20_cdv2018.jsonld
 
 # extract examples
-cat $DATA_DIR/pm20_cdv2018.jsonld | ./extract_examples.sh > ./examples.jsonld
+cat $DATA_DIR/pm20_cdv2018.jsonld | ./extract_examples.sh > ../examples.jsonld
 
 # combine files in build directory
 cd ..

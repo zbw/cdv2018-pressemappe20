@@ -18,63 +18,19 @@
       "organizationType": "Unternehmen",
       "member": [
         {
-          "url": {
-            "hasOccupation": "Unternehmer. - Gründer der Borsig AG",
-            "gndIdentifier": "118661981",
-            "wdIndentifier": [
-              "Q65271"
-            ],
-            "temporal": "1912-",
-            "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0022xx/002215.xml",
-            "freeDocCount": 4,
-            "dateOfBirthAndDeath": "1804-1854",
-            "birthDate": "1804",
-            "wikipediaPage": [
-              "https://de.wikipedia.org/wiki/August_Borsig"
-            ],
-            "totalDocCount": 6,
-            "prefLabel": "Borsig, August",
-            "nationality": "Deutschland",
-            "identifier": "pe/002215",
-            "@id": "http://purl.org/pressemappe20/folder/pe/002215",
-            "@type": [
-              "PersonFolder",
-              "zbwext:Pm20Folder"
-            ],
-            "deathDate": "1854"
-          },
           "roleName": "Gründer",
           "name": "Borsig, August",
+          "schema:url": {
+            "@id": "http://purl.org/pressemappe20/folder/pe/002215"
+          },
           "fromTo": "1837-1854"
         },
         {
-          "url": {
-            "hasOccupation": "Unternehmer",
-            "gndIdentifier": "117621544",
-            "wdIndentifier": [
-              "Q1357611"
-            ],
-            "temporal": "1927-1933",
-            "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0022xx/002216.xml",
-            "freeDocCount": 23,
-            "dateOfBirthAndDeath": "1869-1933",
-            "birthDate": "1869",
-            "wikipediaPage": [
-              "https://de.wikipedia.org/wiki/Ernst_Borsig"
-            ],
-            "totalDocCount": 23,
-            "prefLabel": "Borsig, Ernst von",
-            "nationality": "Deutschland",
-            "identifier": "pe/002216",
-            "@id": "http://purl.org/pressemappe20/folder/pe/002216",
-            "@type": [
-              "zbwext:Pm20Folder",
-              "PersonFolder"
-            ],
-            "deathDate": "1933"
-          },
           "roleName": "Leitung",
           "name": "Borsig, Ernst von",
+          "schema:url": {
+            "@id": "http://purl.org/pressemappe20/folder/pe/002216"
+          },
           "fromTo": "1894-1931"
         }
       ],
@@ -95,31 +51,6 @@
       ],
       "prefLabel": "A. Borsig",
       "fromTo": "1837-2003"
-    },
-    {
-      "hasOccupation": "Führer der Unabhängigkeitsbewegung",
-      "gndIdentifier": "118639145",
-      "wdIndentifier": [
-        "Q1001"
-      ],
-      "temporal": "1922-",
-      "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml",
-      "freeDocCount": 377,
-      "dateOfBirthAndDeath": "1869-1948",
-      "birthDate": "1869",
-      "wikipediaPage": [
-        "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
-      ],
-      "totalDocCount": 669,
-      "prefLabel": "Gandhi, Mohandas Karamchand",
-      "nationality": "Indien",
-      "identifier": "pe/005823",
-      "@id": "http://purl.org/pressemappe20/folder/pe/005823",
-      "@type": [
-        "zbwext:Pm20Folder",
-        "PersonFolder"
-      ],
-      "deathDate": "1948"
     }
   ]
 }

@@ -7,6 +7,7 @@ frame = json.loads(frame_fh)
 data_fh = open('../data/pm20_cdv2018.interim.jsonld').read()
 data = json.loads(data_fh)
 
-framed = jsonld.frame(data, frame)
+#result = jsonld.flatten(data)
+result = jsonld.frame(data, frame)
 
-print(json.dumps(framed, indent=2))
+print(json.dumps(result, indent=2))

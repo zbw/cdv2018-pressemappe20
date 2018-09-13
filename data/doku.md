@@ -19,60 +19,13 @@ andere JSON verarbeitet werden.
 Beispieldaten für ein Personen-Dossier:
 
 ```json
-{
-    "@id": "http://purl.org/pressemappe20/folder/pe/005823",
-    "@type": "PersonFolder",
-    "dateOfBirthAndDeath": "1869-1948",
-    "gndIdentifier": "118639145",
-    "identifier": "pe/005823",
-    "temporal": "1922-",
-    "birthDate": "1869",
-    "deathDate": "1948",
-    "hasOccupation": "Führer der Unabhängigkeitsbewegung",
-    "nationality": "Indien",
-    "prefLabel": "Gandhi, Mohandas Karamchand",
-    "wikipediaPage": [
-        "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
-    ],
-    "freeDocCount": 377,
-    "totalDocCount": 669,
-    "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml",
-    "wdIndentifier": [
-        "Q1001"
-    ]
-}
+To be included
 ```
 
 Beispieldaten für ein Firmen-Dossier:
 
 ```json
-{
-    "@id": "http://purl.org/pressemappe20/folder/co/045931",
-    "@type": "CompanyFolder",
-    "gndIdentifier": "4627572-1",
-    "organizationType": "Kolonialgesellschaft",
-    "identifier": "co/045931",
-    "temporal": "1907-1934",
-    "dissolutionDate": "1934",
-    "foundingDate": "1906",
-    "industry": [
-        "Schifffahrt"
-    ],
-    "location": [
-        "Bremen"
-    ],
-    "prefLabel": "Hamburg-Bremer Afrika Linie AG",
-    "wikipediaPage": [
-        "https://de.wikipedia.org/wiki/Hamburg-Bremer_Afrika-Linie"
-    ],
-    "freeDocCount": 31,
-    "fromTo": "1906-1934",
-    "totalDocCount": 31,
-    "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/co/0459xx/045931.xml",
-    "wdIndentifier": [
-        "Q15819114"
-    ]
-}
+To be included
 ```
 Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben. 
 
@@ -124,8 +77,8 @@ Feld | Bezeichnung | Kommentar
 `fromTo` | Zeit, während der die Firma bestand | nicht kontrolliertes Format
 `foundingDate` | Gründungsjahr | abgeleitet aus `fromTo`
 `dissolutionDate` | Jahr der Auflösung | abgeleitet aus `fromTo`
-`member` | Beziehung zu einer Person |
-`member/url` | Schlüssel für die Person |
+`member` | Beziehung zu einer Personenmappe |
+`member/url/@id` | Schlüssel für die Personmappe |
 `member/name` | Name der Person | abgeleitet von `url`
 `member/roleName` | Rolle | Funktion; kontroliertes Vokabular
 `member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat; nicht kontrolliertes Format
