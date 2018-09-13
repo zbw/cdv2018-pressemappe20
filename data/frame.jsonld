@@ -1,0 +1,5 @@
+{
+  "@context": "http://localhost/cdv2018/context.jsonld",
+  "@type": "http://zbw.eu/namespaces/zbw-extensions/Pm20Folder",
+  "@embed": "@always"
+}
