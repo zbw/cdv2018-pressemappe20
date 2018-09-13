@@ -46,6 +46,13 @@
     "gndIdentifier" : "gndo:gndIdentifier",
     "foundingDate" : "schema:foundingDate",
     "dissolutionDate" : "schema:dissolutionDate",
+    "member" : "schema:member",
+    "roleName" : "schema:roleName",
+    "url" : {
+      "@id" : "schema:url",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name" : "schema:name",
 
     "fromTo" : "zbwext:fromTo",
     "totalDocCount" : "zbwext:totalDocCount",

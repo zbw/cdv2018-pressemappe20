@@ -83,7 +83,7 @@ Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 
 **@id - Schlüssel** volle URL der Mappe
 
-**@type - Mappentyp** PersonFolder oder CompanyFolder
+**@type - Mappentyp** PersonFolder oder CompanyFolder (+ stets Pm20Folder)
 
 **identifier - Kurzschlüssel** letzter Teil der URL, in Wikidata verlinkt (PM20
 folder ID, P4293)
