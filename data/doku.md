@@ -84,77 +84,51 @@ Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
 `@id` | Schlüssel | volle URL der Mappe
-
 `@type` | Mappentyp | PersonFolder oder CompanyFolder (+ stets Pm20Folder)
-
-`identifier` | Kurzschlüssel | letzter Teil der URL, in Wikidata verlinkt (PM20
-folder ID, P4293)
-
+`identifier` | Kurzschlüssel | letzter Teil der URL, in Wikidata verlinkt (PM20 folder ID, P4293)
 `temporal` | zeitliche Abdeckung | des gesammelten Materials
-
 `viewUrl` | Mappeninhalt | per DFG-Viewer
-
 `totalDocCount` | Gesamtzahl der Dokumente | der Mappe
-
 `freeDocCount` | Anzahl der online zugänglichen Dokumente | der Mappe
-
 `note` | Notiz | freier Text; bezieht sich z.T. auch auf den Mappengegenstand
-
 
 
 ## Daten über den Gegenstand der Mappe
 
+Feld | Bezeichnung | Kommentar
+-----|-------------|----------
 `prefLabel` | Name | der Person oder Firma, zugleich verwendet als Mappentitel
-
-`gndIdentifier` | GND ID | [Gemeinsame
-Normdatei](https://de.wikipedia.org/wiki/Gemeinsame_Normdatei) der
-deutschsprachigen Bibliotheken
-
-`wdIdentifier` | Wikidata Item ID (QID) | aus Wikidata abgeleitet. Kann
-mehrfach auftreten, weil Mappen mehrere Items betreffen können. Umgekehrt kann
-es zu umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen geben.
-
+`gndIdentifier` | GND ID | [Gemeinsame Normdatei](https://de.wikipedia.org/wiki/Gemeinsame_Normdatei) der deutschsprachigen Bibliotheken
+`wdIdentifier` | Wikidata Item ID (QID) | aus Wikidata abgeleitet. Kann mehrfach auftreten, weil Mappen mehrere Items betreffen können. Umgekehrt kann es zu umfangreichen Themen (z.B. Reichsbahn) mehrere Mappen geben.
 `wikipediaPage` | Wikipedia-Seite | aus Wikidata abgeleitet
 
 
 ### Daten über Personen
 
+Feld | Bezeichnung | Kommentar
+-----|-------------|----------
 `nationality` | Nationalität | kontrolliertes Vokabular
-
 `hasOccupation` | Tätigkeit | freier Text
-
 `dateOfBirthAndDeath` | Lebensdaten | nicht kontrolliertes Format
-
 `birthDate` | Geburtsjahr | abgeleitet aus `dateOfBirthAndDeath`
-
 `deathDate` | Todesjahr | abgeleitet aus `dateOfBirthAndDeath`
-
 
 
 ### Daten über Firmen
 
-`organizationType` | Art der Organisation | kontrolliertes Vokabul
-
+Feld | Bezeichnung | Kommentar
+-----|-------------|----------
+`organizationType` | Art der Organisation | kontrolliertes Vokabular
 `industry` | Branche | kontrolliertes Vokabular
-
 `location` | Sitz | kontrolliertes Vokabular
-
 `fromTo` | Zeit, während der die Firma bestand | nicht kontrolliertes Format
-
 `foundingDate` | Gründungsjahr | abgeleitet aus `fromTo`
-
 `dissolutionDate` | Jahr der Auflösung | abgeleitet aus `fromTo`
-
 `member` | Beziehung zu einer Person |
-
 `member/url` | Schlüssel für die Person |
-
 `member/name` | Name der Person | abgeleitet von `url`
-
 `member/roleName` | Rolle | Funktion; kontroliertes Vokabular
-
-`member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat;
-nicht kontrolliertes Format
+`member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat; nicht kontrolliertes Format
 
 
 ## Bemerkungen zur Linked-Data-Umsetzung
