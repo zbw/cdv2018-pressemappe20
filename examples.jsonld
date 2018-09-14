@@ -18,20 +18,20 @@
       "organizationType": "Unternehmen",
       "member": [
         {
-          "roleName": "Gründer",
-          "name": "Borsig, August",
-          "schema:url": {
-            "@id": "http://purl.org/pressemappe20/folder/pe/002215"
-          },
-          "fromTo": "1837-1854"
-        },
-        {
-          "roleName": "Leitung",
-          "name": "Borsig, Ernst von",
-          "schema:url": {
+          "url": {
             "@id": "http://purl.org/pressemappe20/folder/pe/002216"
           },
+          "roleName": "Leitung",
+          "name": "Borsig, Ernst von",
           "fromTo": "1894-1931"
+        },
+        {
+          "url": {
+            "@id": "http://purl.org/pressemappe20/folder/pe/002215"
+          },
+          "roleName": "Gründer",
+          "name": "Borsig, August",
+          "fromTo": "1837-1854"
         }
       ],
       "wikipediaPage": [
@@ -47,10 +47,43 @@
       "@id": "http://purl.org/pressemappe20/folder/co/041389",
       "@type": [
         "CompanyFolder",
-        "zbwext:Pm20Folder"
+        "Pm20Folder"
       ],
       "prefLabel": "A. Borsig",
       "fromTo": "1837-2003"
+    },
+    {
+      "hasOccupation": "Führer der Unabhängigkeitsbewegung",
+      "gndIdentifier": "118639145",
+      "wdIndentifier": [
+        "Q1001"
+      ],
+      "temporal": "1922-",
+      "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml",
+      "freeDocCount": 377,
+      "dateOfBirthAndDeath": "1869-1948",
+      "birthDate": "1869",
+      "wikipediaPage": [
+        "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
+      ],
+      "totalDocCount": 669,
+      "prefLabel": "Gandhi, Mohandas Karamchand",
+      "activity": [
+        {
+          "about": "Politik",
+          "location": [
+            "Indien"
+          ]
+        }
+      ],
+      "nationality": "Indien",
+      "identifier": "pe/005823",
+      "@id": "http://purl.org/pressemappe20/folder/pe/005823",
+      "@type": [
+        "Pm20Folder",
+        "PersonFolder"
+      ],
+      "deathDate": "1948"
     }
   ]
 }

@@ -65,6 +65,10 @@ Feld | Bezeichnung | Kommentar
 `dateOfBirthAndDeath` | Lebensdaten | nicht kontrolliertes Format
 `birthDate` | Geburtsjahr | abgeleitet aus `dateOfBirthAndDeath`
 `deathDate` | Todesjahr | abgeleitet aus `dateOfBirthAndDeath`
+`activity` | Wirkungsbereich | 
+`activity/about` | sachlicher Wirkungsbereich | kontrolliertes Vokabular
+`activity/location` | geografischer Wirkungsbereich | konrtolliertes Vokabular (Länder)
+`activity/fromTo` | zeitlicher Wirkungsbereich | nicht kontrolliert
 
 
 ### Daten über Firmen

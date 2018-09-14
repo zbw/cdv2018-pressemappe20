@@ -1,0 +1,13 @@
+# Count fieldOfActivity
+#
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
+PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+#
+select (str(count(distinct ?pm20)) as ?count) ?field
+where {
+  ?pm20 zbwext:activity/schema:about ?field ;
+                       zbwext:freeDocCount ?docCount .
+  filter(?docCount > 0)
+}
+group by ?field
+order by desc(count(distinct ?pm20))

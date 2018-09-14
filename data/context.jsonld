@@ -8,6 +8,7 @@
     "skos" : "http://www.w3.org/2004/02/skos/core#",
     "zbwext" : "http://zbw.eu/namespaces/zbw-extensions/",
 
+    "Pm20Folder" : "zbwext:Pm20Folder",
     "CompanyFolder" : "zbwext:CompanyFolder",
     "PersonFolder" : "zbwext:PersonFolder",
     "SubjectFolder" : "zbwext:SubjectFolder",
@@ -24,6 +25,9 @@
       "@id" : "foaf:page",
       "@type":"@id",
       "@container" : "@set"
+    },
+    "about" : {
+      "@id" : "schema:about"
     },
     "location" : {
       "@id" : "schema:location",
@@ -46,10 +50,17 @@
     "gndIdentifier" : "gndo:gndIdentifier",
     "foundingDate" : "schema:foundingDate",
     "dissolutionDate" : "schema:dissolutionDate",
-    "member" : "schema:member",
+    "member" : {
+      "@id" : "schema:member",
+      "@container" : "@set"
+    },
     "roleName" : "schema:roleName",
     "url" : "schema:url",
     "name" : "schema:name",
+    "activity" : {
+      "@id" : "zbwext:activity",
+      "@container" : "@set"
+    },
 
     "fromTo" : "zbwext:fromTo",
     "totalDocCount" : "zbwext:totalDocCount",

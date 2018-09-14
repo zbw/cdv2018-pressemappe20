@@ -14,13 +14,16 @@ construct {
   ?pm20 zbwext:wdIdentifier ?wdId ;
     foaf:page ?page .
   ?pm20 schema:member ?member .
-  ?member ?memberProp ?memberValue
+  ?member ?memberProp ?memberValue .
+  ?pm20 zbwext:activity ?activity .
+  ?activity ?actProp ?actValue .
 }
 where {
   # only person and company folders
   ?pm20 a ?class .
-  ##?pm20 dcterms:identifier "co/041389" .
   filter(?class in (zbwext:PersonFolder, zbwext:CompanyFolder))
+  ?pm20 dcterms:identifier ?id .
+  filter(?id in ("pe/005823", "co/041389")) .
   #
   # only folders with freely viewable documents
   ?pm20 zbwext:freeDocCount ?docCount .
@@ -33,6 +36,12 @@ where {
   optional {
     ?pm20 schema:member ?member .
     ?member ?memberProp ?memberValue .
+  }
+  #
+  # activities of a person
+  optional {
+    ?pm20 zbwext:activity ?activity .
+    ?activity ?actProp ?actValue .
   }
   #
   # information from Wikidata
