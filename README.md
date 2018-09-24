@@ -47,7 +47,7 @@ diese Dokumente kann die ZBW keine Lizenzen an Dritte erteilen._
 
 ## Datenbereitstellung
 
-Die Daten stehen als [Download](https://dx.doi.org/10.5281/zenodo.1410554)
+Die Daten stehen als [Download](https://doi.org/10.5281/zenodo.1410553)
 sowie online über einen [SPARQL-Endpoint](http://zbw.eu/beta/sparql/pm20/query)
 zur Verfügung. Als Format wurde JSON-LD gewählt, das sowohl mit den üblichen
 Web-Tools und -Bibliotheken als auch mit Linked-Data-Tools verarbeitet werden

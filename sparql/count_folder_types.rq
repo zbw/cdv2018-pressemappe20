@@ -1,0 +1,31 @@
+# Count folders by type, with counts of GND and Wikidata ids
+#
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
+PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+#
+select ?class (str(count(distinct ?pm20)) as ?count) (str(sum(?hasGndId)) as ?countGndId) (str(sum(?hasWdId)) as ?countWikidataId)
+where {
+  ?pm20 a ?class ;
+        zbwext:freeDocCount ?docCount ;
+        dcterms:identifier ?pm20Id .
+  # restrictions for cdv2018
+  filter(?class in (zbwext:PersonFolder, zbwext:CompanyFolder))
+  filter(?docCount > 0)
+  #
+  # GND
+  optional {
+    ?pm20 gndo:gndIdentifier ?gndId .
+  }
+  bind(if(bound(?gndId), 1, 0) as ?hasGndId)
+  #
+  # Wikidata
+  optional {
+    graph <http://zbw.eu/beta/wikidata/ng> {
+      ?wd wdt:P4293 ?pm20Id .
+    }
+  }
+  bind(if(bound(?wd), 1, 0) as ?hasWdId)
+}
+group by ?class
