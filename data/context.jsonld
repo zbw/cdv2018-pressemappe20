@@ -57,6 +57,22 @@
     "roleName" : "schema:roleName",
     "url" : "schema:url",
     "name" : "schema:name",
+    "precedingCorporateBody" : {
+      "@id" : "gndo:precedingCorporateBody",
+      "@container" : "@set"
+    },
+    "succeedingCorporateBody" : {
+      "@id" : "gndo:succeedingCorporateBody",
+      "@container" : "@set"
+    },
+    "parentOrganization" : {
+      "@id" : "schema:parentOrganization",
+      "@container" : "@set"
+    },
+    "subOrganization" : {
+      "@id" : "schema:subOrganization",
+      "@container" : "@set"
+    },
     "activity" : {
       "@id" : "zbwext:activity",
       "@container" : "@set"

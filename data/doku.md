@@ -11,6 +11,10 @@ Stichwort "PM20". Derzeit sind die Einträge aus konrollierten Vokabularen als
 Stringwerte wiedergegeben. Im Unterverzeichnis [raw](./raw) finden sich die
 umfassenden, nicht aufbereiteten Rohdaten.
 
+Auch die inhaltliche Klassifizierung der Firmen ist und deren
+Beziehungs-Netzwerke  (Vorgänger/Nachfolger, übergeordnete/untergeordnete) sind
+"Work in Progress".
+
 Die Veröffentlichung erfolgt im [JSON-LD](https://json-ld.org/)-Format. Es ist
 über einen [context](./context.jsonld) mit erweiterten semantischen Informationen
 verknüpft. Zugleich kann es unter Außerachtlassen dieses Kontexts wie jedes
@@ -86,6 +90,18 @@ Feld | Bezeichnung | Kommentar
 `member/name` | Name der Person | abgeleitet von `url`
 `member/roleName` | Rolle | Funktion; kontroliertes Vokabular
 `member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat; nicht kontrolliertes Format
+`parentOrganization` | übergeordnete Firma/Institution |
+`parentOrganization/url` | Schlüssel der Firmenmappe |
+`parentOrganization/name` | Name der Firma/Institution |
+`subOrganization` | untergeordnete Firma/Institution |
+`subOrganization/url` | Schlüssel der Firmenmappe |
+`subOrganization/name` | Name der Firma/Institution |
+`preceedingCorporateBody` | Vorgängerorganisation |
+`preceedingCorporateBody/url` | Schlüssel der Firmenmappe |
+`preceedingCorporateBody/name` | Name der Firma/Institution |
+`succeedingCorporateBody` | Nachfolgerorganisation |
+`succeedingCorporateBody/url` | Schlüssel der Firmenmappe |
+`succeedingCorporateBody/name` | Name der Firma/Institution |
 
 
 ## Bemerkungen zur Linked-Data-Umsetzung
