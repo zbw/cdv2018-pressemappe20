@@ -4,17 +4,30 @@
   },
   "@graph": [
     {
-      "gndIdentifier": "35000-X",
+      "gndIdentifier": "6055420-4",
       "wdIndentifier": [
         "Q546769"
       ],
-      "note": "1933 erwarb Rheinmetall die A. Borsig GmbH; 1935 Namensänderung. Der Firmensitz wurde 1938 von Düsseldorf nach Berlin verlegt. 1939 weitere Werke in Sömmerda, Unterlüss u.a.",
-      "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/co/0413xx/041389.xml",
+      "note": "1837 - Gründung der Eisengießerei A. Borsig in der Chausseestraße/ Oranienburger Tor, Berlin-Mitte, damals noch vor den Stadtmauern von Berlin.  - Die Borsigwerke in Tegel nehmen im Herbst 1898 die Produktion auf. 1933 erwarb Rheinmetall die A. Borsig GmbH; 1935 Namensänderung. Der Firmensitz wurde 1938 von Düsseldorf nach Berlin verlegt. 1939 weitere Werke in Sömmerda, Unterlüss u.a.",
       "industry": [
         "Maschinen- und Anlagenbau"
       ],
       "temporal": "1918,1927,1929-1937,1946-1960",
       "foundingDate": "1837",
+      "succeedingCorporateBody": [
+        {
+          "url": {
+            "@id": "http://purl.org/pressemappe20/folder/co/056039"
+          },
+          "name": "Deutsche Industrie-Anlagen GmbH"
+        },
+        {
+          "url": {
+            "@id": "http://purl.org/pressemappe20/folder/co/005946"
+          },
+          "name": "Babcock-Borsig AG"
+        }
+      ],
       "organizationType": "Unternehmen",
       "member": [
         {
@@ -34,15 +47,21 @@
           "fromTo": "1837-1854"
         }
       ],
-      "wikipediaPage": [
-        "https://de.wikipedia.org/wiki/Borsig_(Unternehmen)"
-      ],
+      "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/co/0413xx/041389.xml",
       "dissolutionDate": "2003",
       "totalDocCount": 66,
       "location": [
-        "Berlin"
+        "Berlin-Tegel"
       ],
       "freeDocCount": 66,
+      "subOrganization": [
+        {
+          "url": {
+            "@id": "http://purl.org/pressemappe20/folder/co/041863"
+          },
+          "name": "Borsigwerk Aktiengesellschaft in Oberschlesien"
+        }
+      ],
       "identifier": "co/041389",
       "@id": "http://purl.org/pressemappe20/folder/co/041389",
       "@type": [
@@ -59,13 +78,10 @@
         "Q1001"
       ],
       "temporal": "1922-",
-      "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml",
       "freeDocCount": 377,
       "dateOfBirthAndDeath": "1869-1948",
       "birthDate": "1869",
-      "wikipediaPage": [
-        "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
-      ],
+      "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml",
       "totalDocCount": 669,
       "prefLabel": "Gandhi, Mohandas Karamchand",
       "activity": [

@@ -17,8 +17,16 @@ construct {
   ?member ?memberProp ?memberValue .
   ?pm20 zbwext:activity ?activity .
   ?activity ?actProp ?actValue .
+  ?pm20 ?companyRelation ?otherCompany .
+  ?otherCompany ?comProp ?comValue .
 }
 where {
+  values ( ?companyRelation ) {
+    ( schema:parentOrganization )
+    ( schema:subOrganization )
+    ( gndo:preceedingCorporateBody )
+    ( gndo:succeedingCorporateBody )
+  }
   # only person and company folders
   ?pm20 a ?class .
   filter(?class in (zbwext:PersonFolder, zbwext:CompanyFolder))
@@ -44,6 +52,12 @@ where {
     ?activity ?actProp ?actValue .
   }
   #
+  # relations of a company
+  optional {
+    ?pm20 ?companyRelation ?otherCompany .
+    ?otherCompany ?comProp ?comValue .
+  }
+  #
   # information from Wikidata
   ?pm20 dcterms:identifier ?pm20Id .
   optional {
@@ -54,7 +68,7 @@ where {
       # German Wikipedia page
       optional {
         ?page schema:about ?wd ;
-              schema:isPartOf <https://de.wikipedia.org/> .
+              schema:isPartOf <hattps://de.wikipedia.org/> .
       }
     }
   }
