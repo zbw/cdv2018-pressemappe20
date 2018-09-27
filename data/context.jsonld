@@ -73,6 +73,10 @@
       "@id" : "schema:subOrganization",
       "@container" : "@set"
     },
+    "broaderLocation" : {
+      "@id" : "zbwext:broaderLocation",
+      "@container" : "@set"
+    },
     "activity" : {
       "@id" : "zbwext:activity",
       "@container" : "@set"

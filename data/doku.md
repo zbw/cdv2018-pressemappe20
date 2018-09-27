@@ -31,7 +31,7 @@ Beispieldaten für ein Firmen-Dossier:
 ```json
 To be included
 ```
-Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben. 
+Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben.
 
 Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 
@@ -69,7 +69,7 @@ Feld | Bezeichnung | Kommentar
 `dateOfBirthAndDeath` | Lebensdaten | nicht kontrolliertes Format
 `birthDate` | Geburtsjahr | abgeleitet aus `dateOfBirthAndDeath`
 `deathDate` | Todesjahr | abgeleitet aus `dateOfBirthAndDeath`
-`activity` | Wirkungsbereich | 
+`activity` | Wirkungsbereich |
 `activity/about` | sachlicher Wirkungsbereich | kontrolliertes Vokabular
 `activity/location` | geografischer Wirkungsbereich | konrtolliertes Vokabular (Länder)
 `activity/fromTo` | zeitlicher Wirkungsbereich | nicht kontrolliert
@@ -82,6 +82,7 @@ Feld | Bezeichnung | Kommentar
 `organizationType` | Art der Organisation | kontrolliertes Vokabular
 `industry` | Branche | kontrolliertes Vokabular
 `location` | Sitz | kontrolliertes Vokabular
+`broaderLocation` | Sitzland | kontrolliertes Vokabular (Länder + Hamburg + Berlin)
 `fromTo` | Zeit, während der die Firma bestand | nicht kontrolliertes Format
 `foundingDate` | Gründungsjahr | abgeleitet aus `fromTo`
 `dissolutionDate` | Jahr der Auflösung | abgeleitet aus `fromTo`
