@@ -11,9 +11,8 @@ Stichwort "PM20". Derzeit sind die Einträge aus konrollierten Vokabularen als
 Stringwerte wiedergegeben. Im Unterverzeichnis [raw](./raw) finden sich die
 umfassenden, nicht aufbereiteten Rohdaten.
 
-Auch die inhaltliche Klassifizierung der Firmen ist und deren
-Beziehungs-Netzwerke  (Vorgänger/Nachfolger, übergeordnete/untergeordnete) sind
-"Work in Progress".
+Auch die inhaltliche Klassifizierung der Firmen und deren Beziehungs-Netzwerke
+(Vorgänger/Nachfolger, übergeordnete/untergeordnete) sind "Work in Progress".
 
 Die Veröffentlichung erfolgt im [JSON-LD](https://json-ld.org/)-Format. Es ist
 über einen [context](./context.jsonld) mit erweiterten semantischen Informationen
@@ -23,17 +22,98 @@ andere JSON verarbeitet werden.
 Beispieldaten für ein Personen-Dossier:
 
 ```json
-To be included
+{
+  "hasOccupation": "Führer der Unabhängigkeitsbewegung",
+  "gndIdentifier": "118639145",
+  "wdIndentifier": [
+    "Q1001"
+  ],
+  "temporal": "1922-",
+  "freeDocCount": 377,
+  "dateOfBirthAndDeath": "1869-1948",
+  "birthDate": "1869",
+  "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml",
+  "totalDocCount": 669,
+  "prefLabel": "Gandhi, Mohandas Karamchand",
+  "activity": [
+    {
+      "about": "Politik",
+      "location": [
+        "Indien"
+      ]
+    }
+  ],
+  "nationality": "Indien",
+  "identifier": "pe/005823",
+  "@id": "http://purl.org/pressemappe20/folder/pe/005823",
+  "@type": [
+    "Pm20Folder",
+    "PersonFolder"
+  ],
+  "deathDate": "1948"
+}
+
 ```
 
 Beispieldaten für ein Firmen-Dossier:
 
 ```json
-To be included
+{
+  "freeDocCount": 66,
+  "foundingDate": "1837",
+  "member": [
+    {
+      "url": "http://purl.org/pressemappe20/folder/pe/002216",
+      "roleName": "Leitung",
+      "name": "Borsig, Ernst von",
+      "fromTo": "1894-1931"
+    },
+    {
+      "url": "http://purl.org/pressemappe20/folder/pe/002215",
+      "roleName": "Gründer",
+      "name": "Borsig, August",
+      "fromTo": "1837-1854"
+    }
+  ],
+  "skos:altLabel": [
+    "Borsig Lokomotiv-Werke GmbH <Henningsdorf> -- [1931-1944]",
+    "Rheinmetall Borsig AG <Berlin> -- [1935-1956]",
+    "Borsig-Werk <Berlin>"
+  ],
+  "organizationType": "Unternehmen",
+  "prefLabel": "A. Borsig",
+  "gndIdentifier": "6055420-4",
+  "temporal": "1918,1927,1929-1937,1946-1960",
+  "succeedingCorporateBody": [
+    {
+      "url": "http://purl.org/pressemappe20/folder/co/056039",
+      "name": "Deutsche Industrie-Anlagen GmbH"
+    },
+    {
+      "url": "http://purl.org/pressemappe20/folder/co/005946",
+      "name": "Babcock-Borsig AG"
+    }
+  ],
+  "note": "1837 - Gründung der Eisengießerei A. Borsig in der Chausseestraße/ Oranienburger Tor, Berlin-Mitte, damals noch vor den Stadtmauern von Berlin.  - Die Borsigwerke in Tegel nehmen im Herbst 1898 die Produktion auf. 1933 erwarb Rheinmetall die A. Borsig GmbH; 1935 Namensänderung. Der Firmensitz wurde 1938 von Düsseldorf nach Berlin verlegt. 1939 weitere Werke in Sömmerda, Unterlüss u.a.",
+  "broaderLocation": [
+    "Berlin"
+  ],
+  "totalDocCount": 66,
+  "location": [
+    "Berlin-Tegel"
+  ],
+  "dissolutionDate": "2003",
+  "subOrganization": [
+    {
+      "url": "http://purl.org/pressemappe20/folder/co/041863",
+      "name": "Borsigwerk Aktiengesellschaft in Oberschlesien"
+    }
 ```
 Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben.
 
 Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
+
+Alle __kontrollierten Vokabulare__ sind hier [hier](https://github.com/zbw/cdv2018-pressemappe20/tree/master/sparql) verlinkt - mit Drill-Down bis auf Mappenebene!
 
 
 ## Daten über die Mappe
@@ -82,12 +162,12 @@ Feld | Bezeichnung | Kommentar
 `organizationType` | Art der Organisation | kontrolliertes Vokabular
 `industry` | Branche | kontrolliertes Vokabular
 `location` | Sitz | kontrolliertes Vokabular
-`broaderLocation` | Sitzland | kontrolliertes Vokabular (Länder + Hamburg + Berlin)
+`broaderLocation` | übergeordnete Lokation | kontrolliertes Vokabular
 `fromTo` | Zeit, während der die Firma bestand | nicht kontrolliertes Format
 `foundingDate` | Gründungsjahr | abgeleitet aus `fromTo`
 `dissolutionDate` | Jahr der Auflösung | abgeleitet aus `fromTo`
 `member` | Beziehung zu einer Personenmappe |
-`member/url/@id` | Schlüssel für die Personmappe |
+`member/url` | Schlüssel für die Personmappe |
 `member/name` | Name der Person | abgeleitet von `url`
 `member/roleName` | Rolle | Funktion; kontroliertes Vokabular
 `member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat; nicht kontrolliertes Format

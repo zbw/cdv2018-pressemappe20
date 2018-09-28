@@ -8,17 +8,13 @@
       "foundingDate": "1837",
       "member": [
         {
-          "url": {
-            "@id": "http://purl.org/pressemappe20/folder/pe/002216"
-          },
+          "url": "http://purl.org/pressemappe20/folder/pe/002216",
           "roleName": "Leitung",
           "name": "Borsig, Ernst von",
           "fromTo": "1894-1931"
         },
         {
-          "url": {
-            "@id": "http://purl.org/pressemappe20/folder/pe/002215"
-          },
+          "url": "http://purl.org/pressemappe20/folder/pe/002215",
           "roleName": "Gründer",
           "name": "Borsig, August",
           "fromTo": "1837-1854"
@@ -35,16 +31,12 @@
       "temporal": "1918,1927,1929-1937,1946-1960",
       "succeedingCorporateBody": [
         {
-          "url": {
-            "@id": "http://purl.org/pressemappe20/folder/co/005946"
-          },
-          "name": "Babcock-Borsig AG"
+          "url": "http://purl.org/pressemappe20/folder/co/056039",
+          "name": "Deutsche Industrie-Anlagen GmbH"
         },
         {
-          "url": {
-            "@id": "http://purl.org/pressemappe20/folder/co/056039"
-          },
-          "name": "Deutsche Industrie-Anlagen GmbH"
+          "url": "http://purl.org/pressemappe20/folder/co/005946",
+          "name": "Babcock-Borsig AG"
         }
       ],
       "note": "1837 - Gründung der Eisengießerei A. Borsig in der Chausseestraße/ Oranienburger Tor, Berlin-Mitte, damals noch vor den Stadtmauern von Berlin.  - Die Borsigwerke in Tegel nehmen im Herbst 1898 die Produktion auf. 1933 erwarb Rheinmetall die A. Borsig GmbH; 1935 Namensänderung. Der Firmensitz wurde 1938 von Düsseldorf nach Berlin verlegt. 1939 weitere Werke in Sömmerda, Unterlüss u.a.",
@@ -58,9 +50,7 @@
       "dissolutionDate": "2003",
       "subOrganization": [
         {
-          "url": {
-            "@id": "http://purl.org/pressemappe20/folder/co/041863"
-          },
+          "url": "http://purl.org/pressemappe20/folder/co/041863",
           "name": "Borsigwerk Aktiengesellschaft in Oberschlesien"
         }
       ],

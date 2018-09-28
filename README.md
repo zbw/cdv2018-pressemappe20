@@ -39,6 +39,12 @@ die die aus Wikidata verlinkten PM20-WirtschaftswissenschaftlerInnen anhand
 ihrer Geburtsorte auf einer Weltkarte präsentiert - angezeigte Daten,
 Koordinaten und Bilder stammen alle aus Wikidata.
 
+Typ                  | Anzahl | mit GND | mit Wikidata
+---------------------|--------|---------|-------------
+Personen             | 5262 | 4175 | 4601
+Firmen/Institutionen | 6433 | 3180 | 1300
+
+
 _\* Für die eingescannten Presseartikel und sonstigen Dokumente liegen die Rechte
 bei den jeweiligen Urhebern. Hier greifen die gesetzlichen Regelungen, für
 diese Dokumente kann die ZBW keine Lizenzen an Dritte erteilen._
