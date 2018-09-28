@@ -23,27 +23,33 @@ zur Verfügung gestellt.
 
 Darüber hinaus hat die ZBW die gesamten Metadaten(\*) unter CC0-Lizenz
 gestellt, um eine freie Community-Nutzung zu ermöglichen. Die Daten enthalten
-jeweils auch einen Link auf eine DFG-Viewer-Ansicht des Dossiers. Beispiele
+jeweils auch einen Link auf eine DFG-Viewer-Ansicht des Dossiers - Beispiele
 sind [Mahatma
 Gandhi](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml)
 oder die [Hamburg-Bremer Afrika Linie
 AG](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/co/0459xx/045931.xml).
 
 Für "Coding da Vinci Rhein-Main 2018" haben wir die Dossiers des Personen- und
-Firmenarchivs aufbereitet, die anzeigbare Dokumente bieten. Da viele Datensätze
-Identifier aus der Gemeinsamen Normdatei (GND) und/oder aus Wikidata enthalten,
-können aus diesen verlinkten Datenbeständen weitere Metadaten, Mediendateien
-und weiterführende Links gewonnen werden. Als Anregung dazu eine
+Firmenarchivs aufbereitet, die anzeigbare Dokumente bieten. Sie sind mit
+kontrollierten Vokabularen mehrdimensional erschlossen.
+
+Typ (CdV2018-Bestand) | Anzahl | mit GND | mit Wikidata
+----------------------|--------|---------|-------------
+Personen              | 5262 | 4175 | 4601
+Firmen/Institutionen  | 6433 | 3180 | 1300
+
+Da viele Datensätze Identifier aus der Gemeinsamen Normdatei (GND) und/oder aus
+Wikidata enthalten, können aus diesen verlinkten Datenbeständen weitere
+Metadaten, Mediendateien und weiterführende Links gewonnen werden. Als Anregung
+dazu eine
 [Abfrage](https://www.wikidata.org/wiki/User:Jneubert/Special_queries#Map_of_economists_in_PM20_by_place_of_birth),
 die die aus Wikidata verlinkten PM20-WirtschaftswissenschaftlerInnen anhand
-ihrer Geburtsorte auf einer Weltkarte präsentiert - angezeigte Daten,
-Koordinaten und Bilder stammen alle aus Wikidata.
+ihrer Geburtsorte auf einer Weltkarte präsentiert. Alle angezeigten Daten,
+Koordinaten und Bilder stammen aus Wikidata.
 
-Typ                  | Anzahl | mit GND | mit Wikidata
----------------------|--------|---------|-------------
-Personen             | 5262 | 4175 | 4601
-Firmen/Institutionen | 6433 | 3180 | 1300
-
+Die Materialsammlung der Pressemappen hatte die deutschen Kolonialambitionen
+zum Ausgangspunkt. Dies spiegelt sich auch in den Mappen über entsprechend
+aktive Personen und Firmen/Institutionen im In- und Ausland wieder.
 
 _\* Für die eingescannten Presseartikel und sonstigen Dokumente liegen die Rechte
 bei den jeweiligen Urhebern. Hier greifen die gesetzlichen Regelungen, für

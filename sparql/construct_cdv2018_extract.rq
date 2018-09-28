@@ -31,13 +31,15 @@ where {
   ?pm20 a ?class .
   filter(?class in (zbwext:PersonFolder, zbwext:CompanyFolder))
   ?pm20 dcterms:identifier ?id .
-  filter(?id in ("pe/005823", "co/041389")) .
   #
   # only folders with freely viewable documents
   ?pm20 zbwext:freeDocCount ?docCount .
   filter(?docCount > 0)
   #
-  # all available attributes
+  # restrict to example folders
+  ##filter(?id in ("pe/005823", "co/041389")) .
+  #
+  # all available properties and values
   ?pm20 ?p ?o .
   #
   # roles by organization members
