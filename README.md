@@ -33,10 +33,10 @@ Für "Coding da Vinci Rhein-Main 2018" haben wir die Dossiers des Personen- und
 Firmenarchivs aufbereitet, die anzeigbare Dokumente bieten. Sie sind mit
 kontrollierten Vokabularen mehrdimensional erschlossen.
 
-Typ (CdV2018-Bestand) | Anzahl | mit GND | mit Wikidata
+Gegenstand der Mappe  | Anzahl | mit GND | mit Wikidata
 ----------------------|--------|---------|-------------
-Personen              | 5262 | 4175 | 4601
-Firmen/Institutionen  | 6433 | 3180 | 1300
+Person                | 5262 | 4175 | 4601
+Firma/Institution     | 6433 | 3180 | 1300
 
 Da viele Datensätze Identifier aus der Gemeinsamen Normdatei (GND) und/oder aus
 Wikidata enthalten, können aus diesen verlinkten Datenbeständen weitere
