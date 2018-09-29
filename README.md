@@ -31,7 +31,9 @@ AG](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/co/0459xx/
 
 Für "Coding da Vinci Rhein-Main 2018" haben wir die Dossiers des Personen- und
 Firmenarchivs aufbereitet, die anzeigbare Dokumente bieten. Sie sind mit
-kontrollierten Vokabularen mehrdimensional erschlossen.
+[kontrollierten
+Vokabularen](https://github.com/zbw/cdv2018-pressemappe20/blob/master/sparql/README.md#controlled-vocabularies-parameterized-queries)
+mehrdimensional erschlossen.
 
 Gegenstand der Mappe  | Anzahl | mit GND | mit Wikidata
 ----------------------|--------|---------|-------------
@@ -45,7 +47,8 @@ dazu eine
 [Abfrage](https://www.wikidata.org/wiki/User:Jneubert/Special_queries#Map_of_economists_in_PM20_by_place_of_birth),
 die die aus Wikidata verlinkten PM20-WirtschaftswissenschaftlerInnen anhand
 ihrer Geburtsorte auf einer Weltkarte präsentiert. Alle angezeigten Daten,
-Koordinaten und Bilder stammen aus Wikidata.
+Koordinaten und Bilder stammen aus Wikidata; DFG-Viewer-Links ermöglichen
+den Zugriff auf die Mappen.
 
 Die Materialsammlung der Pressemappen hatte die kolonialen Interessen der
 Hamburger Kaufmannschaft und des Deutschen Reiches zum Ausgangspunkt. Dies

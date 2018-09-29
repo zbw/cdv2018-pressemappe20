@@ -113,7 +113,7 @@ Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben
 
 Im folgenden werden "Mappe" und "Dossier" synonym verwendet.
 
-Alle __kontrollierten Vokabulare__ sind hier [hier](https://github.com/zbw/cdv2018-pressemappe20/tree/master/sparql) verlinkt - mit Drill-Down bis auf Mappenebene!
+Alle __kontrollierten Vokabulare__ sind hier [hier](https://github.com/zbw/cdv2018-pressemappe20/tree/master/sparql#controlled-vocabularies-parameterized-queries) verlinkt - mit Drill-Down bis auf Mappenebene!
 
 
 ## Daten über die Mappe

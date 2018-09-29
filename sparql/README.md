@@ -1,6 +1,6 @@
 ## Queries for CdV 2018 PM20 (20th Century Press Archives)
 
-Uses the SPARQL endpoint at `http://zbw.eu/beta/sparql/pm20/query` or - sometimes - the Wikidata endpoint `https://query.wikidata.org/sparql`.
+Uses the SPARQL endpoint at `http://zbw.eu/beta/sparql/pm20/query` or - sometimes - the Wikidata endpoint `https://query.wikidata.org/sparql`. Federated queries involving both endpoints are supported.
 
 All queries are restricted to the subset of folders relevant for _Coding da Vinci 2018_. For queries on the total of PM20, see https://github.com/zbw/sparql-queries/tree/master/pm20.
 

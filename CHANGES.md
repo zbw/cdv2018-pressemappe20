@@ -9,4 +9,6 @@
 - Add `preceedingCorporateBody`, `succeedingCorporateBody`, `parentOrganization`, `subOrganization` for organization relations
 - Add `examples.jsonld` file
 - Add `broaderLocation` for the seat of an organization
-- Add sparql directory and queries/lists for all controlled vocabularies to Github repository
+- Add sparql directory to Github repository
+- Add queries/lists for all controlled vocabularies
+
