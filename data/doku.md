@@ -152,7 +152,7 @@ Feld | Bezeichnung | Kommentar
 `activity` | Wirkungsbereich |
 `activity/about` | sachlicher Wirkungsbereich | kontrolliertes Vokabular
 `activity/location` | geografischer Wirkungsbereich | konrtolliertes Vokabular (Länder)
-`activity/fromTo` | zeitlicher Wirkungsbereich | nicht kontrolliert
+`activity/fromTo` | zeitlicher Wirkungsbereich | nicht kontrolliertes Format
 
 
 ### Daten über Firmen
@@ -166,10 +166,10 @@ Feld | Bezeichnung | Kommentar
 `fromTo` | Zeit, während der die Firma bestand | nicht kontrolliertes Format
 `foundingDate` | Gründungsjahr | abgeleitet aus `fromTo`
 `dissolutionDate` | Jahr der Auflösung | abgeleitet aus `fromTo`
-`member` | Beziehung zu einer Personenmappe |
-`member/url` | Schlüssel für die Personmappe |
-`member/name` | Name der Person | abgeleitet von `url`
-`member/roleName` | Rolle | Funktion; kontroliertes Vokabular
+`member` | Beziehung zu einer Personenmappe | Gründer etc.
+`member/url` | Schlüssel für die Person |
+`member/name` | Name der Person | entsprechend `url`
+`member/roleName` | Rolle | Funktion; kontrolliertes Vokabular
 `member/fromTo` | Zeitraum | in dem die Person die Funktion eingenommen hat; nicht kontrolliertes Format
 `parentOrganization` | übergeordnete Firma/Institution |
 `parentOrganization/url` | Schlüssel der Firmenmappe |

@@ -47,9 +47,13 @@ die die aus Wikidata verlinkten PM20-WirtschaftswissenschaftlerInnen anhand
 ihrer Geburtsorte auf einer Weltkarte präsentiert. Alle angezeigten Daten,
 Koordinaten und Bilder stammen aus Wikidata.
 
-Die Materialsammlung der Pressemappen hatte die deutschen Kolonialambitionen
-zum Ausgangspunkt. Dies spiegelt sich auch in den Mappen über entsprechend
-aktive Personen und Firmen/Institutionen im In- und Ausland wieder.
+Die Materialsammlung der Pressemappen hatte die kolonialen Interessen der
+Hamburger Kaufmannschaft und des Deutschen Reiches zum Ausgangspunkt. Dies
+spiegelt sich auch in den Mappen über kolonialistisch aktive
+[Personen](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/sparql-queries/contents/pm20/folder_by_value_sub.rq&sub=http://zbw.eu/namespaces/zbw-extensions/activity&property=http://schema.org/about&value=%22Kolonialwesen%22)
+und
+[Firmen/Institutionen](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/sparql-queries/contents/pm20/folder_by_value.rq&property=http://purl.org/dc/elements/1.1/type&value=%22Kolonialgesellschaft%22)
+im In- und Ausland wieder.
 
 _\* Für die eingescannten Presseartikel und sonstigen Dokumente liegen die Rechte
 bei den jeweiligen Urhebern. Hier greifen die gesetzlichen Regelungen, für

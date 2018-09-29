@@ -13,7 +13,7 @@ where {
   ?pm20 zbwext:freeDocCount ?docCount .
   filter(?docCount > 0)
   bind(uri(concat('http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query',
-          '&queryRef=https://api.github.com/repos/zbw/sparql-queries/contents/pm20/folder_by_value_sub.rq',
+          '&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/folder_by_value_sub.rq',
           '&sub=', str(?sub), '&property=', str(?property), '&value="', ?value, '"')) as ?count)
 }
 group by ?value ?count
