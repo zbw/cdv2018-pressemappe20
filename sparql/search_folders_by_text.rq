@@ -1,0 +1,24 @@
+# Search folders by text
+#
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX text: <http://jena.apache.org/text#>
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
+#
+select distinct ?type ?pm20 ?pm20Label (str(?docCount) as ?docCnt)
+where {
+  # "query parameter"
+  values ( ?searchString ) {
+    ( 'warburg' )
+  }
+  # used in fulltext search
+  ?pm20 text:query ?searchString ;
+    a ?type ;
+    skos:prefLabel ?pm20Label ;
+    zbwext:freeDocCount ?docCount .
+  #
+  # restrict to person and organization folders with free documents
+  filter(?type in (zbwext:PersonFolder, zbwext:CompanyFolder))
+  filter(?docCount > 0)
+}
+order by ?type ?pm20Label
+
