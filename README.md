@@ -1,6 +1,6 @@
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
-_Version 3_
+_Datenset Version 3_
 
 [ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
 
