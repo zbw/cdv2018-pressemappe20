@@ -14,7 +14,8 @@ Query | Description
 ------|------------
 [dummy](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/dummy.rq) | Template for queries ([results](http://zbw.eu/beta/sparql-lab/result?resultRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/results/dummy.json))
 [count_folder_types](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/count_folder_types.rq) | Count folders by type, with counts of GND and Wikidata IDs and German Wikipedia page links
-[search_folders_by_text.rq](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/search_folders_by_text.rq.rq) | Search folders by text 
+[search_folders_by_text](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/search_folders_by_text.rq) | Search folders by text 
+[companies_with_reports](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/companies_with_reports.rq) | Full list of companies which have business reports
 
 
 ### Controlled vocabularies (parameterized queries)
