@@ -2,13 +2,11 @@
 
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
-__Version 3__
+_Version 3_
 
-`Datengebende Institution:` [ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
+[ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
 
-`Lizenzen des Datensets:` [CC0](./LICENSE)
-
-`Inhaltliche Beschreibung des Datensets:`
+Lizenz: [CC0](./LICENSE)
 
 Die Pressemappe 20. Jahrhundert bietet thematisch zusammengestellte Dossiers
 mit Zeitungsartikeln, Firmenschriften und anderem aus einem großen Spektrum von
@@ -64,7 +62,6 @@ _\* Für die eingescannten Presseartikel und sonstigen Dokumente liegen die Rech
 bei den jeweiligen Urhebern. Hier greifen die gesetzlichen Regelungen, für
 diese Dokumente kann die ZBW keine Lizenzen an Dritte erteilen._
 
-`Links* (z.B. zu Schnittstellen oder einer Datenpräsentation):`
 
 ## Datenbereitstellung
 
