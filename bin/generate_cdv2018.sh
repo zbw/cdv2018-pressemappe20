@@ -4,6 +4,7 @@
 QUERY_DIR=../sparql
 DATA_DIR=../data
 ENDPOINT=http://zbw.eu/beta/sparql/pm20/query
+ZIP=_build/cdv2018_pm20_data.zip
 
 # extract the turtle data from the endpoint
 curl --silent  -X POST -H "Content-type: application/sparql-query" -H "Accept: application/ld+json" \
@@ -18,10 +19,10 @@ cat $DATA_DIR/pm20_cdv2018.jsonld | ./extract_examples.sh > ../examples.jsonld
 
 # combine files in build directory
 cd ..
-/usr/bin/rm -f _build/data.zip
-zip -r _build/data.zip data -x \*~ *.interim.*
-/usr/bin/cp LICENSE _build
-/usr/bin/cp README.md _build
-/usr/bin/cp CHANGES.md _build
-/usr/bin/cp examples.jsonld _build
+/usr/bin/rm -f _build/*
+zip -r $ZIP data -x \*~ *.interim.*
+zip -r $ZIP LICENSE.txt
+zip -r $ZIP README.md
+zip -r $ZIP CHANGES.md
+zip -r $ZIP examples.jsonld
 
