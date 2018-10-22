@@ -1,17 +1,19 @@
 # Count folders by type, with counts of GND and Wikidata ids
+# and German Wikipedia page links
 #
 PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
 PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX schema: <http://schema.org/>
 #
-select ?class (str(count(distinct ?pm20)) as ?count) (str(sum(?hasGndId)) as ?countGndId) (str(sum(?hasWdId)) as ?countWikidataId)
+select ?type (str(count(distinct ?pm20)) as ?count) (str(sum(?hasGndId)) as ?withGndId) (str(sum(?hasWdId)) as ?withWikidataId) (str(sum(?hasWpLink)) as ?withWpLink)
 where {
-  ?pm20 a ?class ;
+  ?pm20 a ?type ;
         zbwext:freeDocCount ?docCount ;
         dcterms:identifier ?pm20Id .
   # restrictions for cdv2018
-  filter(?class in (zbwext:PersonFolder, zbwext:CompanyFolder))
+  filter(?type in (zbwext:PersonFolder, zbwext:CompanyFolder))
   filter(?docCount > 0)
   #
   # GND
@@ -24,8 +26,16 @@ where {
   optional {
     graph <http://zbw.eu/beta/wikidata/ng> {
       ?wd wdt:P4293 ?pm20Id .
+      #
+      # Wikipedia
+      optional {
+        ?wp schema:about ?wd ;
+            schema:isPartOf <hattps://de.wikipedia.org/> .
+      }
     }
   }
   bind(if(bound(?wd), 1, 0) as ?hasWdId)
+  bind(if(bound(?wp), 1, 0) as ?hasWpLink)
 }
-group by ?class
+group by ?type
+
