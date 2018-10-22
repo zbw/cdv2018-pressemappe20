@@ -2,6 +2,8 @@
 
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
+__Version 3__
+
 `Datengebende Institution:` [ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
 
 `Lizenzen des Datensets:` [CC0](./LICENSE)
@@ -13,10 +15,10 @@ mit Zeitungsartikeln, Firmenschriften und anderem aus einem großen Spektrum von
 wirtschaftlich, politisch oder gesellschaftlich relevanten Themen. In ihren
 Pressearchiven in Kiel und Hamburg haben die Vorläuferinstitutionen der [ZBW -
 Leibniz-Informationszentrum Wirtschaft](http://zbw.eu) über fast hundert Jahre
-hinweg Material zu Personen, Firmen/institutionen, Waren und Sachthemen aus
+hinweg Material zu Personen, Firmen/Institutionen, Waren und Sachthemen aus
 über 1500 Publikationen gesammelt und aufbereitet. Die bis 1948
-veröffentlichten Dokumente (ca. 5,7 Mio.  Seiten) wurde in einem von der DFG
-geförderten Projekt digitalisiert und wird nach und nach mit entsprechenden
+veröffentlichten Dokumente (ca. 5,7 Mio.  Seiten) wurden in einem von der DFG
+geförderten Projekt digitalisiert. Sie werden nach und nach mit entsprechenden
 Metadaten erschlossen und über die Anwendung  [Pressemappe 20.
 Jahrhundert](http://webopac0.hwwa.de/PresseMappe20/index.cfm) (PM20) öffentlich
 zur Verfügung gestellt.
@@ -24,7 +26,7 @@ zur Verfügung gestellt.
 Darüber hinaus hat die ZBW die gesamten Metadaten(\*) unter CC0-Lizenz
 gestellt, um eine freie Community-Nutzung zu ermöglichen. Die Daten enthalten
 jeweils auch einen Link auf eine DFG-Viewer-Ansicht des Dossiers - Beispiele
-sind [Mahatma
+sind etwa [Mahatma
 Gandhi](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/pe/0058xx/005823.xml)
 oder die [Hamburg-Bremer Afrika Linie
 AG](http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/co/0459xx/045931.xml).
@@ -37,8 +39,8 @@ mehrdimensional erschlossen.
 
 Gegenstand der Mappe  | Anzahl | mit GND | mit Wikidata
 ----------------------|--------|---------|-------------
-Person                | 5262 | 4175 | 4601
-Firma/Institution     | 6433 | 3180 | 1300
+Person                | 5262 | 4176 | 4717
+Firma/Institution     | 7411 | 3515 | 1662
 
 Da viele Datensätze Identifier aus der Gemeinsamen Normdatei (GND) und/oder aus
 Wikidata enthalten, können aus diesen verlinkten Datenbeständen weitere
@@ -81,4 +83,5 @@ es zugleich ermöglichen, Fragen und Issues zu adressieren.
 * [PM20-Website](http://webopac0.hwwa.de/PresseMappe20/index.cfm)
 * [Wikipedia-Artikel](https://de.wikipedia.org/wiki/Pressearchiv_20._Jahrhundert)
 * [Leibniz-Infrastrukturseite](https://www.leibniz-gemeinschaft.de/infrastrukturen/archive/pressearchiv-der-zbw/)
+* [Coding da Vinci Rhein-Main 2018](https://codingdavinci.de/events/rheinmain/)
 

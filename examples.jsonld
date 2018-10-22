@@ -6,24 +6,20 @@
     {
       "freeDocCount": 66,
       "foundingDate": "1837",
+      "reportCount": 0,
       "member": [
-        {
-          "url": "http://purl.org/pressemappe20/folder/pe/002216",
-          "roleName": "Leitung",
-          "name": "Borsig, Ernst von",
-          "fromTo": "1894-1931"
-        },
         {
           "url": "http://purl.org/pressemappe20/folder/pe/002215",
           "roleName": "Gründer",
           "name": "Borsig, August",
           "fromTo": "1837-1854"
+        },
+        {
+          "url": "http://purl.org/pressemappe20/folder/pe/002216",
+          "roleName": "Leitung",
+          "name": "Borsig, Ernst von",
+          "fromTo": "1894-1931"
         }
-      ],
-      "skos:altLabel": [
-        "Borsig Lokomotiv-Werke GmbH <Henningsdorf> -- [1931-1944]",
-        "Rheinmetall Borsig AG <Berlin> -- [1935-1956]",
-        "Borsig-Werk <Berlin>"
       ],
       "organizationType": "Unternehmen",
       "prefLabel": "A. Borsig",
@@ -46,6 +42,11 @@
       "totalDocCount": 66,
       "location": [
         "Berlin-Tegel"
+      ],
+      "altLabel": [
+        "Borsig Lokomotiv-Werke GmbH <Henningsdorf> -- [1931-1944]",
+        "Rheinmetall Borsig AG <Berlin> -- [1935-1956]",
+        "Borsig-Werk <Berlin>"
       ],
       "dissolutionDate": "2003",
       "subOrganization": [
