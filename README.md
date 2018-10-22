@@ -1,5 +1,3 @@
-`Titel des Datensets:`
-
 # Pressemappe 20. Jahrhundert - Personen- und Firmendossiers
 
 _Version 3_
