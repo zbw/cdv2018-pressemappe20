@@ -4,7 +4,7 @@
 QUERY_DIR=../sparql
 DATA_DIR=../data
 ENDPOINT=http://zbw.eu/beta/sparql/pm20/query
-ZIP=_build/cdv2018_pm20_data.zip
+ZIP=_build/cdv2018_pressemappe20.zip
 
 # extract the turtle data from the endpoint
 curl --silent  -X POST -H "Content-type: application/sparql-query" -H "Accept: application/ld+json" \
