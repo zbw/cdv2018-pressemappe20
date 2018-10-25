@@ -38,6 +38,7 @@
       "@container" : "@set"
     },
     "prefLabel" : "skos:prefLabel",
+    "altLabel" : "skos:altLabel",
     "note" : "skos:note",
     "organizationType" : "dc:type",
     "identifier" : "dct:identifier",
@@ -84,6 +85,7 @@
 
     "fromTo" : "zbwext:fromTo",
     "totalDocCount" : "zbwext:totalDocCount",
-    "freeDocCount" : "zbwext:freeDocCount"
+    "freeDocCount" : "zbwext:freeDocCount",
+    "reportCount" : "zbwext:reportCount"
   }
 }

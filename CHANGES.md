@@ -1,5 +1,12 @@
 # Changes
 
+## Dataset version3
+
+- Extend dataset to more than 7400 organizations
+- Add `altLabel` for organizations
+- Add `reportCount` (business reports)
+- During build, put all data and documentation into one zip file for easier download
+
 ## Dataset version2
 
 - Fix accidental comment line in .jsonld file

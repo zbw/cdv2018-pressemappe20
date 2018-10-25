@@ -52,7 +52,6 @@ Beispieldaten für ein Personen-Dossier:
   ],
   "deathDate": "1948"
 }
-
 ```
 
 Beispieldaten für ein Firmen-Dossier:
@@ -61,24 +60,20 @@ Beispieldaten für ein Firmen-Dossier:
 {
   "freeDocCount": 66,
   "foundingDate": "1837",
+  "reportCount": 0,
   "member": [
-    {
-      "url": "http://purl.org/pressemappe20/folder/pe/002216",
-      "roleName": "Leitung",
-      "name": "Borsig, Ernst von",
-      "fromTo": "1894-1931"
-    },
     {
       "url": "http://purl.org/pressemappe20/folder/pe/002215",
       "roleName": "Gründer",
       "name": "Borsig, August",
       "fromTo": "1837-1854"
+    },
+    {
+      "url": "http://purl.org/pressemappe20/folder/pe/002216",
+      "roleName": "Leitung",
+      "name": "Borsig, Ernst von",
+      "fromTo": "1894-1931"
     }
-  ],
-  "skos:altLabel": [
-    "Borsig Lokomotiv-Werke GmbH <Henningsdorf> -- [1931-1944]",
-    "Rheinmetall Borsig AG <Berlin> -- [1935-1956]",
-    "Borsig-Werk <Berlin>"
   ],
   "organizationType": "Unternehmen",
   "prefLabel": "A. Borsig",
@@ -102,12 +97,33 @@ Beispieldaten für ein Firmen-Dossier:
   "location": [
     "Berlin-Tegel"
   ],
+  "altLabel": [
+    "Borsig Lokomotiv-Werke GmbH <Henningsdorf> -- [1931-1944]",
+    "Rheinmetall Borsig AG <Berlin> -- [1935-1956]",
+    "Borsig-Werk <Berlin>"
+  ],
   "dissolutionDate": "2003",
   "subOrganization": [
     {
       "url": "http://purl.org/pressemappe20/folder/co/041863",
       "name": "Borsigwerk Aktiengesellschaft in Oberschlesien"
     }
+  ],
+  "wdIndentifier": [
+    "Q546769"
+  ],
+  "@id": "http://purl.org/pressemappe20/folder/co/041389",
+  "industry": [
+    "Maschinen- und Anlagenbau"
+  ],
+  "viewUrl": "http://dfg-viewer.de/show/?tx_dlf%5Bid%5D=http://zbw.eu/beta/pm20mets/co/0413xx/041389.xml",
+  "fromTo": "1837-2003",
+  "identifier": "co/041389",
+  "@type": [
+    "CompanyFolder",
+    "Pm20Folder"
+  ]
+}
 ```
 Felder, die mehrfach auftreten können, werden durchgängig als Array ausgegeben.
 
@@ -160,6 +176,7 @@ Feld | Bezeichnung | Kommentar
 Feld | Bezeichnung | Kommentar
 -----|-------------|----------
 `organizationType` | Art der Organisation | kontrolliertes Vokabular
+`altLabel` | andere Namen | schließt manchmal kleinere Tochterfirmen oder Aufkäufe ein
 `industry` | Branche | kontrolliertes Vokabular
 `location` | Sitz | kontrolliertes Vokabular
 `broaderLocation` | übergeordnete Lokation | kontrolliertes Vokabular
@@ -183,6 +200,7 @@ Feld | Bezeichnung | Kommentar
 `succeedingCorporateBody` | Nachfolgerorganisation |
 `succeedingCorporateBody/url` | Schlüssel der Firmenmappe |
 `succeedingCorporateBody/name` | Name der Firma/Institution |
+`reportCount` | Anzahl Geschäftsberichte | in der Dokumentanzahl enthalten
 
 
 ## Bemerkungen zur Linked-Data-Umsetzung

@@ -1,13 +1,14 @@
 # Extract subset of PM20 for CdV2018
 #
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
-PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX schema: <http://schema.org/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
 #
 construct {
   ?pm20 ?p ?o .
@@ -41,6 +42,8 @@ where {
   #
   # all available properties and values
   ?pm20 ?p ?o .
+  # filter out redundant labels
+  filter(!(?p = rdfs:label))
   #
   # roles by organization members
   optional {
