@@ -73,7 +73,7 @@ where {
       # German Wikipedia page
       optional {
         ?page schema:about ?wd ;
-              schema:isPartOf <hattps://de.wikipedia.org/> .
+              schema:isPartOf <https://de.wikipedia.org/> .
       }
     }
   }

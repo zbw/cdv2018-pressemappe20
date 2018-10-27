@@ -30,7 +30,7 @@ where {
       # Wikipedia
       optional {
         ?wp schema:about ?wd ;
-            schema:isPartOf <hattps://de.wikipedia.org/> .
+            schema:isPartOf <https://de.wikipedia.org/> .
       }
     }
   }
