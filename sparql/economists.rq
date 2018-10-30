@@ -1,0 +1,41 @@
+# Economists with links to Wikipedia, DDB images, EconBizWorks
+#
+PREFIX schema: <http://schema.org/>
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+#
+select distinct ?pm20 ?pm20Label ?wpLink ('WP de' as ?wpLinkLabel) ?ddbLink ("Bilder" as ?ddbLinkLabel) ?econBizLink ("Werke" as ?econBizLinkLabel) ?dossier (str(?freeDocCount) as ?dossierLabel) ?dbr
+where {
+  ?pm20 zbwext:activity [ schema:about "Wirtschaftswissenschaft" ] ;
+        dct:identifier ?pm20Id ;
+        skos:prefLabel ?pm20Label ;
+        zbwext:viewUrl ?dossier ;
+        zbwext:freeDocCount ?freeDocCount ;
+        .
+  filter(?freeDocCount > 0)
+  #
+  # GND
+  optional {
+    ?pm20 gndo:gndIdentifier ?gndId .
+    # EconBiz
+    bind(uri(concat('http://econbiz.de/Search/Results?lookfor=gnd%3A', $gndId)) as ?econBizLink)
+    # DDB
+    bind(uri(concat('https://www.deutsche-digitale-bibliothek.de/searchresults?query=affiliate_fct_role_normdata%3Ahttp%3A%2F%2Fd-nb.info%2Fgnd%2F', ?gndId, '&rows=100&viewType=list&isThumbnailFiltered=false&facetValues%5B%5D=type_fct%3Dmediatype_002')) as ?ddbLink)
+  }
+  # Wikidata / Wikipedia
+  optional {
+  graph <http://zbw.eu/beta/wikidata/ng> {
+    ?wd wdt:P4293 ?pm20Id .
+    ?wpLink schema:about ?wd ;
+          schema:isPartOf <https://de.wikipedia.org/> .
+    bind(strafter(str(?wpLink), 'https://de.wikipedia.org/wiki/') as ?dbr)
+  }
+  service <http://dbpedia.org/sparql> {
+  }
+  }
+}
+order by ?pm20Label
+#limit 10
