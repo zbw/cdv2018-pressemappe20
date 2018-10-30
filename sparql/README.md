@@ -19,6 +19,8 @@ Query | Description
 
 # Link to other datasets
 
+Query | Description
+------|------------
 [economists](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/economists.rq) | Economists with links to Wikipedia, DDB images, EconBizWorks
 [judaicalink_overlap](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/judaicalink_overlap.rq) | Overlap in CdV datasets by FID Jewish Studies and ZBW (JudaicaLink and PM20, via common GND)
 
