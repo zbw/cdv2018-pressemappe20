@@ -1,0 +1,31 @@
+# Overlap in CdV datasets PM20 and Judaicalink (via common GND)
+#
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+#
+select distinct ?judaicalink ?judaicalinkLabel ?gnd (?gndId as ?gndLabel) ?pm20 ?pm20Label ?pm20ViewerLink ?pm20ViewerLinkLabel
+where {
+  # get all data with GND from Judaicalink
+  service <http://data.judaicalink.org/sparql/query> {
+    ?judaicalink gndo:gndIdentifier ?gndId ;
+        skos:prefLabel ?judaicalinkLabel .
+    # only use URIs built on GND
+    filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
+  }
+  # match with PM20 folders with GND
+  ?pm20 a zbwext:PersonFolder ;
+        gndo:gndIdentifier ?gndId ;
+        zbwext:viewUrl ?pm20ViewerLink ;
+        skos:prefLabel ?pm20Label ;
+        zbwext:freeDocCount ?docCount .
+  # only folders with free documents
+  filter(?docCount > 0)
+  #
+  # additional links/link labels
+  bind(str(?docCount) as ?pm20ViewerLinkLabel) .
+  bind(uri(concat('http://d-nb.info/gnd/', ?gndId)) as ?gnd)
+} 
+
