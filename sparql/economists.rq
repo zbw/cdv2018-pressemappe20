@@ -6,15 +6,16 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 #
-select distinct ?pm20 ?pm20Label ?wpLink ('WP de' as ?wpLinkLabel) ?ddbLink ("Bilder" as ?ddbLinkLabel) ?econBizLink ("Werke" as ?econBizLinkLabel) ?dossier (str(?freeDocCount) as ?dossierLabel) ?dbr
+select distinct ?pm20 ?pm20Label ?info ?wpLink ('WP de' as ?wpLinkLabel) ?ddbLink ("Bilder" as ?ddbLinkLabel) ?econBizLink ("Werke" as ?econBizLinkLabel) ?dossier (str(?freeDocCount) as ?dossierLabel)
 where {
   ?pm20 zbwext:activity [ schema:about "Wirtschaftswissenschaft" ] ;
-        dct:identifier ?pm20Id ;
-        skos:prefLabel ?pm20Label ;
-        zbwext:viewUrl ?dossier ;
-        zbwext:freeDocCount ?freeDocCount ;
-        .
+                                                                 dct:identifier ?pm20Id ;
+                                                                 skos:prefLabel ?pm20Label ;
+                                                                 zbwext:viewUrl ?dossier ;
+                                                                 zbwext:freeDocCount ?freeDocCount ;
+                                                                 .
   filter(?freeDocCount > 0)
   #
   # GND
@@ -27,15 +28,31 @@ where {
   }
   # Wikidata / Wikipedia
   optional {
-  graph <http://zbw.eu/beta/wikidata/ng> {
-    ?wd wdt:P4293 ?pm20Id .
-    ?wpLink schema:about ?wd ;
-          schema:isPartOf <https://de.wikipedia.org/> .
-    bind(strafter(str(?wpLink), 'https://de.wikipedia.org/wiki/') as ?dbr)
+    graph <http://zbw.eu/beta/wikidata/ng> {
+      ?wd wdt:P4293 ?pm20Id .
+      ?wpLink schema:about ?wd ;
+              schema:isPartOf <https://de.wikipedia.org/> .
+    }
   }
-  service <http://dbpedia.org/sparql> {
+  optional {
+    graph <http://zbw.eu/beta/wikidata/ng> {
+      ?wd2 wdt:P4293 ?pm20Id .
+      ?wpLinkEn schema:about ?wd2 ;
+              schema:isPartOf <https://en.wikipedia.org/> .
+    }
   }
+  bind(if(bound(?wpLinkEn),
+      uri(concat('http://dbpedia.org/resource/', strafter(str(?wpLinkEn), 'https://en.wikipedia.org/wiki/'))),
+      <http://dummy.org>)
+    as ?dbr)
+  optional {
+    service <http://dbpedia.org/sparql> {
+      ?dbr rdfs:comment ?comment
+      filter(lang(?comment) = 'de')
+      bind(concat(?comment, ' (aus Wikipedia, via DBpedia)') as ?info)
+    }
   }
 }
 order by ?pm20Label
-#limit 10
+limit 50
+
