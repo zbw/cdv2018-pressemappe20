@@ -4,7 +4,7 @@ _Datenset Version 3_
 
 [ZBW - Leibniz-Informationszentrum Wirtschaft](http://www.zbw.eu) (Kiel/Hamburg)
 
-Lizenz: [CC0](./LICENSE)
+Lizenz: [CC0](./LICENSE.txt)
 
 Die Pressemappe 20. Jahrhundert bietet thematisch zusammengestellte Dossiers
 mit Zeitungsartikeln, Firmenschriften und anderem aus einem großen Spektrum von
