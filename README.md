@@ -65,6 +65,7 @@ diese Dokumente kann die ZBW keine Lizenzen an Dritte erteilen._
 
 Die Daten stehen als [Download](https://doi.org/10.5281/zenodo.1410553)
 sowie online über einen [SPARQL-Endpoint](http://zbw.eu/beta/sparql/pm20/query)
+([form](http://zbw.eu/beta/sparql-lab/?endpoint=http://zbw.eu/beta/sparql/pm20/query&queryRef=https://api.github.com/repos/zbw/cdv2018-pressemappe20/contents/sparql/search_folders_by_text.rq)
 zur Verfügung. Als Format wurde JSON-LD gewählt, das sowohl mit den üblichen
 Web-Tools und -Bibliotheken als auch mit Linked-Data-Tools verarbeitet werden
 kann ([Format-Dokumentation, mit Beispielen](data/doku.md)).  Ein
