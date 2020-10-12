@@ -1,28 +1,46 @@
 # Reach out to PM20 from JudaicaLink dataset via Wikidata
 # (not using any PM20 sparql endpoint)
 #
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
-PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
 #
-select distinct ?judaicalink ?judaicalinkLabel (?gndId as ?gndLabel) ?pm20 ?pm20Label ?pm20ViewerLink ?pm20ViewerLinkLabel
-where {  
+select distinct ?judaicalink ?judaicalinkLabel ?gndId ?item ?itemLabel ?pm20 (?pm20Id as
+  ?pm20Label) ?pm20ViewerLink ('view PM20 folder' as ?pm20ViewerLinkLabel)
+where {
   # get all Wikidata persons with PM20 folders and GND Id
   service <https://query.wikidata.org/sparql> {
     ?item wdt:P31 wd:Q5 ;
-          wdt:P4293 ?pm20id ;
+          wdt:P4293 ?pm20Id ;
           wdt:P227 ?gndId .
+    #
+    # only folders with free documents
+    ?item p:P4293/pq:P5592 ?freeDocs .
+    filter(?freeDocs > 0)
+    #
+    bind(strafter(str(?item), str(wd:)) as ?itemLabel)
+    bind(uri(concat('http://purl.org/pressemappe20/folder/', $pm20Id)) as ?pm20)
+    #
+    # construct viewer link
+    ##bind(uri(concat('https://pm20.zbw.eu/dfgview/', $pm20Id)) as ?pm20ViewerLink)
+    bind(substr(?pm20Id, 4, 4) as ?numStub)
+    bind(substr(?pm20Id, 4, 6) as ?num)
+    bind(uri(concat('http://dfg-viewer.de/show/?tx_dlf[id]=http://zbw.eu/beta/pm20mets/pe/', ?numStub, 'xx/', ?num, '.xml')) as ?pm20ViewerLink)
   }
   #
-  # get Judaicalink persons with these Identifiers
-  ?judaicalink gndo:gndIdentifier ?gndId ;
-      skos:prefLabel ?judaicalinkLabel .
-  # only use Judaicalink URIs built on GND
-  filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
-} 
-
+  # get JudaicaLink persons with these identifiers
+  service <http://data.judaicalink.org/sparql/query> {
+    ?judaicalink gndo:gndIdentifier ?gndId ;
+                 skos:prefLabel ?judaicalinkLabel .
+    # only use Judaicalink URIs built on GND
+    filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
+  }
+}
+order by ?judaicalinkLabel
 
