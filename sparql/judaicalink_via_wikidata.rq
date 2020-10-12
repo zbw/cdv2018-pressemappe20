@@ -1,0 +1,28 @@
+# Reach out to PM20 from JudaicaLink dataset via Wikidata
+# (not using any PM20 sparql endpoint)
+#
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX gndo: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX zbwext: <http://zbw.eu/namespaces/zbw-extensions/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+#
+select distinct ?judaicalink ?judaicalinkLabel (?gndId as ?gndLabel) ?pm20 ?pm20Label ?pm20ViewerLink ?pm20ViewerLinkLabel
+where {  
+  # get all Wikidata persons with PM20 folders and GND Id
+  service <https://query.wikidata.org/sparql> {
+    ?item wdt:P31 wd:Q5 ;
+          wdt:P4293 ?pm20id ;
+          wdt:P227 ?gndId .
+  }
+  #
+  # get Judaicalink persons with these Identifiers
+  ?judaicalink gndo:gndIdentifier ?gndId ;
+      skos:prefLabel ?judaicalinkLabel .
+  # only use Judaicalink URIs built on GND
+  filter(strstarts(str(?judaicalink), 'http://data.judaicalink.org/data/gnd/'))
+} 
+
+
